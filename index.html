@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body> 
+    <!--Working With Forms-->
+
+    <form action="" method="post">
+        <p>Enter Username: <br>
+        <input type="text" name="username" size="15" maxlength="30" r>
+    </p>
+    <p>Enter Password: <br>
+    <input type="password" name="passowrd" size="15" maxlength="30">
+    </p>
+    <p>Select your Gender: <br>
+        <input type="radio" name="gender" value="Male" checked="checked"> Male
+        <input type="radio" name="gender" value="Female" checked="checked"> Female
+        <input type="radio" name="gender" value="not prefered" checked="checked"> Not prefered
+    </p>
+    <p>Enter your Biography <br>
+    <textarea name="textarea" name="biography" rows="20" cols="100"></textarea>
+</p>
+
+
+<!--Checkbox-->
+<p>Select one or more courses:
+<input type="checkbox" name="courses" value="Web & App development" checked="checked">Web & App development
+<input type="checkbox" name="courses" value="Flutter">Flutter
+<input type="checkbox" name="courses" value="Graphic Desingning">Graphic Designing
+<input type="checkbox" name="courses" value="UI/UX">UI/UX
+</p>
+<p>Which device do you use:
+    <select name="Devices">
+        <option value="Mobile">Mobile</option>
+        <option value="Laptop">Laptop</option>
+        <option value="iPad">iPad</option>
+    </p>
+    </select>
+
+    <!--Multiple options select-->
+    <select name="Instruments" size="3" multiple="multiple">
+        <option value="Guitar">Guitar</option>
+        <option value=""></option>
+
+    </select>
+
+</form>
+
+
+</body>
+</html>
