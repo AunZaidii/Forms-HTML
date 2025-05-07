@@ -6,25 +6,44 @@
     <title>Forms</title>
 </head>
 <body> 
+    <h1>Coding Iterview</h1>
+    <h2>Initial Stage</h2>
     <!--Working With Forms-->
 
     <form action="" method="post">
-        <p>Enter Username: <br>
-        <input type="text" name="username" size="15" maxlength="30" r>
-    </p>
-    <p>Enter Password: <br>
-    <input type="password" name="passowrd" size="15" maxlength="30">
-    </p>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" name="username"
+            required="required" /></title><br /> 
+           <label for="password">Password: </label>
+            <input type="password" name="password"
+            required="required" /> 
+           <input type="submit" value="Submit" />
     <p>Select your Gender: <br>
-        <input type="radio" name="gender" value="Male" checked="checked"> Male
-        <input type="radio" name="gender" value="Female" checked="checked"> Female
-        <input type="radio" name="gender" value="not prefered" checked="checked"> Not prefered
+        <input id="female" type="radio" name="gender"
+        value="f">
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" 
+       value="m">
+        <label for="male">Male</label>
     </p>
-    <p>Enter your Biography <br>
+    <p>Enter your age
+        <input type="text" name="age"/>
+        <input type="submit" name="submit"/>
+            <br><br>
+        <label for="username">Date of Birth:</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit" />
+ 
+    </p>
+    <p>Enter your Biography: <br>
     <textarea name="textarea" name="biography" rows="20" cols="100"></textarea>
 </p>
-
-
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Domain Information</legend>
 <!--Checkbox-->
 <p>Select one or more courses:
 <input type="checkbox" name="courses" value="Web & App development" checked="checked">Web & App development
@@ -32,21 +51,50 @@
 <input type="checkbox" name="courses" value="Graphic Desingning">Graphic Designing
 <input type="checkbox" name="courses" value="UI/UX">UI/UX
 </p>
-<p>Which device do you use:
-    <select name="Devices">
-        <option value="Mobile">Mobile</option>
-        <option value="Laptop">Laptop</option>
-        <option value="iPad">iPad</option>
+<p>Which complier do you use:
+    <select name="Compiler">
+        <option value="VSCode">VSCode</option>
+        <option value="PyCharm">PyCharm</option>
+        <option value="JupyterNotebook">JupyterNotebook</option>
     </p>
     </select>
-
+<br>
     <!--Multiple options select-->
-    <select name="Instruments" size="3" multiple="multiple">
-        <option value="Guitar">Guitar</option>
-        <option value=""></option>
+    <p>Which webiste do you use <br>
+    <select name="website" size="3" multiple="multiple">
+        <option value="Github" selected="selected">GitHub</option>
+        <option value="LeetCode">LeetCode</option>
+        <option value="Hackerrank" selected="selected">Hackerrank</option>
+        <option value="W3Schools">W3Schools</option></p>
 
     </select>
 
+    <p>Upload Your Picture 
+        <input type="file" name="Userpic"><br>
+        <input type="submit" value="upload"/></p>
+    </fieldset>
+    <br><br>
+        <fieldset> 
+            <legend>Contact details</legend>
+            <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+            <label>Mobile:<br />
+            <input type="text" name="mobile" /></label><br />
+            <label>Telephone:<br />
+            <input type="text" name="telephone" /></label>
+            <p>Enter your Github Profile Link: <br>
+            <input type="email" name="email" />
+             <input type="submit" value="Submit" /></p>
+            </fieldset>
+            <br><br>
+<fieldset>
+  <legend>Queries</legend>
+  <p>Ask about your queries</p>
+  <input type="search" name="search" 
+  placeholder="Enter Query" />
+   <input type="submit" value="Search" />
+</fieldset>
+  
 </form>
 
 
